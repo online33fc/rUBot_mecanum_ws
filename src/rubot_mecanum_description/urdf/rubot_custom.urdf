@@ -4,17 +4,17 @@
 <!-- |    EDITING THIS FILE BY HAND IS NOT RECOMMENDED                                 | -->
 <!-- =================================================================================== -->
 <robot name="rubot">
-  <material name="yellow">
-    <color rgba="0.8 0.8 0.0 1.0"/>
+  <material name="blue">
+    <color rgba="0.0 0.0 0.8 1.0"/>
   </material>
-  <material name="black">
-    <color rgba="0.15 0.15 0.15 1.0"/>
+  <material name="red">
+    <color rgba="0.8 0.0 0.0 1.0"/>
   </material>
-  <material name="dark_grey">
-    <color rgba="0.2 0.2 0.2 1.0"/>
+  <material name="green">
+    <color rgba="0.0 0.8 0.0 1.0"/>
   </material>
-  <material name="light_grey">
-    <color rgba="0.75 0.75 0.75 1.0"/>
+  <material name="white">
+    <color rgba="1.0 1.0 1.0 1.0"/>
   </material>
 
 <!-- base_footprint reference frame without inertia is needed -->
@@ -31,7 +31,7 @@
       <geometry>
         <mesh filename="package://rubot_mecanum_description/meshes/rubot/base_link.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="yellow"/>
+      <material name="blue"/>
     </visual>
     <collision>
       <origin xyz="0 0 0"/>
@@ -58,7 +58,7 @@
       <geometry>
         <mesh filename="package://rubot_mecanum_description/meshes/rubot/upper_left_wheel.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="light_grey"/>
+      <material name="white"/>
     </visual>
     <collision>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
@@ -84,7 +84,7 @@
       <geometry>
         <mesh filename="package://rubot_mecanum_description/meshes/rubot/lower_left_wheel.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="light_grey"/>
+      <material name="white"/>
     </visual>
     <collision>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
@@ -110,7 +110,7 @@
       <geometry>
         <mesh filename="package://rubot_mecanum_description/meshes/rubot/upper_right_wheel.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="light_grey"/>
+      <material name="white"/>
     </visual>
     <collision>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
@@ -136,7 +136,7 @@
       <geometry>
         <mesh filename="package://rubot_mecanum_description/meshes/rubot/lower_right_wheel.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="light_grey"/>
+      <material name="white"/>
     </visual>
     <collision>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
@@ -162,7 +162,7 @@
       <geometry>
         <mesh filename="package://rubot_mecanum_description/meshes/rubot/Camera.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="black"/>
+      <material name="red"/>
     </visual>
     <collision>
       <origin rpy="0 1.570795 0" xyz="0 0 0"/>
@@ -183,7 +183,7 @@
       <geometry>
         <mesh filename="package://rubot_mecanum_description/meshes/rubot/Lidar.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="black"/>
+      <material name="red"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -215,7 +215,7 @@
       <geometry>
         <mesh filename="package://rubot_mecanum_description/meshes/rubot/number2.stl" scale="0.0008 0.0008 0.0008"/>
       </geometry>
-      <material name="black"/>
+      <material name="red"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -322,14 +322,14 @@
   </gazebo>
 <!-- Gazebo colors have to be specified here with predefined Gazebo colors -->
   <gazebo reference="base_footprint">
-    <material>Gazebo/Yellow</material>
+    <material>Gazebo/Blue</material>
     <gravity>true</gravity>
   </gazebo>
   <gazebo reference="base_link">
-    <material>Gazebo/Yellow</material>
+    <material>Gazebo/Blue</material>
   </gazebo>
   <gazebo reference="base_scan">
-    <material>Gazebo/DarkGrey</material>
+    <material>Gazebo/Green</material>
   </gazebo>
   <gazebo reference="camera">
     <material>Gazebo/Green</material>
